@@ -87,6 +87,7 @@ cask 'brave-browser'
 cask 'clocker', postinstall: "\"${HOME}/.dotfiles/scripts/setup-login-item.sh\" 'Clocker'"
 cask 'firefox@nightly' #, greedy: true
 cask 'google-chrome@beta'
+cask 'intellij-idea'
 cask 'jordanbaird-ice@beta', postinstall: "\"${HOME}/.dotfiles/scripts/setup-login-item.sh\" 'Ice'" if ::OS::Mac::version >= 14
 cask 'keepassxc@beta'
 cask 'ollama-app', restart_service: :changed
